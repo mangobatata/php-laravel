@@ -56,5 +56,3 @@ while ($guess !== $secretNumber && $attempts < $maxAttempts) {
 
     echo "Intentos restantes: " . ($maxAttempts - $attempts) . "\n\n";
 }
-
-?>
