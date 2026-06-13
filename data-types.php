@@ -32,8 +32,19 @@ var_dump($isStudent);
 // Array (colección de valores)
 // =========================
 $fruits = ["Apple", "Banana", "Orange"];
+$data = [
+  "texto",
+  123,
+  3.14,
+  true,
+  null,
+  ["otro", "array"],
+  new stdClass()
+];
 
 print_r($fruits);
+print_r($data);
+var_dump($data[0] . $data[4] . $data[5][1]);
 
 // =========================
 // Null (sin valor)
