@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 // ===============================
 // CLASE BÁSICA EN PHP
 // ===============================
@@ -17,7 +19,7 @@ class User {
     }
 
     // Método (función dentro de la clase)
-    public function greet(): string {
+    public function introduce(): string {
         return "Hello, my name is {$this->name} and I am {$this->age} years old.";
     }
 }
@@ -26,6 +28,7 @@ class User {
 // CREAR OBJETO (INSTANCIA)
 // ===============================
 
-$user1 = new User("Ana", 25);
-
-echo $user1->greet();
+// $user1 = new User("Philipos", 25);
+// echo $user1->greet();
+// $user2 = new User("Brandon", 30);
+// echo $user2->greet();
