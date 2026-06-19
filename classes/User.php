@@ -2,33 +2,23 @@
 
 namespace App;
 
-// ===============================
-// CLASE BÁSICA EN PHP
-// ===============================
-
-class User {
-
-    // Propiedades (variables dentro de la clase)
+// Ejemplo base de una clase en PHP.
+// Una clase agrupa estado (propiedades) y comportamiento (métodos) en una sola unidad.
+class User
+{
+    // Propiedades públicas para mantener el ejemplo simple y directo.
     public string $name;
     public int $age;
 
-    // Constructor (se ejecuta al crear el objeto)
-    public function __construct(string $name, int $age) {
-        $this->name = $name; // $this = el objeto actual
+    public function __construct(string $name, int $age)
+    {
+        // $this representa la instancia actual.
+        $this->name = $name;
         $this->age = $age;
     }
 
-    // Método (función dentro de la clase)
-    public function introduce(): string {
+    public function introduce(): string
+    {
         return "Hello, my name is {$this->name} and I am {$this->age} years old.";
     }
 }
-
-// ===============================
-// CREAR OBJETO (INSTANCIA)
-// ===============================
-
-// $user1 = new User("Philipos", 25);
-// echo $user1->greet();
-// $user2 = new User("Brandon", 30);
-// echo $user2->greet();
